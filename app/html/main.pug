@@ -1,0 +1,66 @@
+include block_html/_style.pug
+include block_html/_include.pug
+
++header()
+.slider-wrap
+	.slider-filter
+	.slider
+		.slider-el(style="background-image:url('img/slider-3.jpg')")
+			.slider-content
+				.main-cont
+					.slider-cont
+						.slider-sub-title VIII всероссийская конференция
+						.slider-title Digital ITSM
+						.slider-text 27 сентября 2017 Рэдиссон Славянская
+
+.members
+	.main-cont
+		.members-wrap
+			.members-list
+				- for (var i=1;i<8;i++)
+					.members-list__el
+						img(src="img/sponsor-"+i+".png", alt="")
+			a(href="#").members-get Члены Форума
+
+.section.section--dark
+	.main-cont
+		.section-title Интересное
+		.list
+			- for (var i=3;i<6;i++)
+				a(href="#").list__el
+					.list__el-img(style="background-image:url('img/item-"+i+".jpg')")
+					.list__el-content
+						.list__el-title Эксперты рекомендуют!
+						.list__el-text Повторять функционал коробочных систем, например Service Desk, в BPMS можно при большом запасе нервов, времени и денег. Почему мы рекомендуем этого не делать — в этой статье ...
+						.list__el-date 17.08.2017
+			.list__el.list__el--sale
+				.sale-item
+				.sale-item
+
+.section
+	.main-cont
+		.section-title Новости ITSM
+		.list
+			- for (var i=6;i<9;i++)
+				a(href="#").list__el
+					.list__el-img(style="background-image:url('img/item-"+i+".jpg')")
+					.list__el-content
+						.list__el-title itSMF России: актуальные проекты
+						.list__el-text Приглашаем сообщество к участию в мероприятиях форума.BPMS можно при большом запасе нервов, времени и денег. Почему мы рекомендуем этого не делать — в этой статье ...
+						.list__el-date 17.08.2017
+			.list__el.list__el--sale
+				.sale-item-long
+
+.section.section--dark
+	.main-cont
+		.section-title Отраслевые новости
+		.list
+			- for (var i=3;i<7;i++)
+				a(href="#").list__el
+					.list__el-img(style="background-image:url('img/item-"+i+".jpg')")
+					.list__el-content
+						.list__el-title Новости VIII Всероссийской конференции itSMF
+						.list__el-text Повторять функционал коробочных систем, например Service Desk, в BPMS можно при большом запасе нервов, времени и денег. Почему мы рекомендуем этого не делать — в этой статье ...
+						.list__el-date 17.08.2017
+
+include ./block_html/_script.pug

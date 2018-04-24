@@ -1,0 +1,241 @@
+@import 'rupture'
+@import "variable/_function.styl"
+@import "variable/_fonts.styl"
+@import "variable/_ie.styl"
+@import "icon/sprite.css"
+@import "variable/_helper.styl"
+@import "variable/_default.styl"
+@import "variable/_elements.styl"
+@import "variable/_constant.styl"
+@import "../module/**/*"
+
+body
+	@extend .type--main
+	font-family $v-font
+	color $main-text-color
+	line-height 1.2
+	letter-spacing 0.01em
+
+.main-cont
+	center(1200px,10px)
+
+.header
+	background: $blue
+.header-cont
+	f()
+	justify-content: space-between
+	align-items: stretch
+.header__logo
+	height: 100%
+	background: $red
+	display: block
+	padding: 30px
+	min-width 265px
+.header__nav
+	width: 100%
+	padding: 0px
+	flex(mid)
+	fl()
+.header__menu
+	flex(between)
+	width: 100%
+.header__top
+	f()
+	align-items: center
+	justify-content: flex-end
+	margin-bottom: 30px
+	width: 100%
+.header__enter
+	f()
+	margin-right: 30px
+.header__enter-el
+	color white
+	cp()
+.header__enter-devider
+	height: 20px
+	width: 1px
+	background:#ffffff45
+	margin: 0 10px
+//.header__search
+
+.header__search-wrap
+	f()
+	align-items: center
+	.input
+		width: 200px
+.header__search-icon
+	margin-left: 10px
+	cp()
+	.icon
+		size 20px
+		fill white
+.header__menu-el
+	up()
+	tr(all)
+	position: relative
+	padding: 5px 10px
+	text-align: center
+	width: 100%
+	&:hover
+		background: #a51e49
+		.header__menu-sub
+			height: auto
+			visibility: visible
+			opacity:1
+			transform translateX(0px)
+	&:after
+		content ''
+		position: absolute
+		right: 0
+		top 0px
+		height: 100%
+		width: 1px
+		background: #ffffff45
+	&:last-child
+		&:after
+			content ''
+			display: none
+.header__menu-link
+	color white
+	display: block
+	width: 100%
+	height: 100%
+	&:hover
+		color white
+
+.header__menu-sub
+	position: absolute
+	background: #a51e49
+	min-width 100%
+	width: 150px
+	top 100%
+	left 0
+	transition opacity .6s, transform .6s
+	height: 0
+	overflow: hidden
+	visibility: hidden
+	opacity:0
+	transform translateX(10px)
+	z-index 5
+
+.header__menu-sub-el
+	display: block
+	padding: 10px 20px
+	text-align: left
+	color white!important
+	tr(all)
+	&:hover
+		background: darken(#a51e49,5)
+
+.slider-wrap
+	position: relative
+.slider-el
+	+below(1440px)
+		padding: 20%
+	padding: 15%
+	bg-full()
+	width: 100%
+	.main-cont
+		height: 100%
+.slider-filter
+	position: absolute
+	width: 100%
+	height: 100%
+	top 0
+	left: 0
+	background: rgba(9, 22, 48, 0.5)
+
+.slider-cont
+	color white
+	f()
+	fl()
+	justify-content: center
+	height: 100%
+.slider-sub-title
+	font-size: 30px
+	up()
+.slider-title
+	font-size: 120px
+
+.slider-text
+	font-size: 18px
+
+.slider-content
+	position: absolute
+	width: 100%
+	height: 100%
+	z-index 2
+	top 0
+	left: 0
+
+.members
+	background: white
+.members-wrap
+	f()
+.members-list
+	flex(between)
+	width: calc(100% - 200px)
+.members-get
+	tr(all)
+	up()
+	padding: 25px
+	background: $red
+	color white
+	width: 200px
+	text-align: center
+	font-size: 20px
+	&:hover
+		color white
+		background darken($red,5)
+
+.section--dark
+	background: #33549517
+
+.section
+	padding: 40px 0
+//.section--intrasting
+//.main-cont
+.section-title
+	padding-left: 20px
+	border-left 2px solid $red
+	font-size: 38px
+	line-height: 1
+	margin-bottom: 40px
+.list
+	f()
+	justify-content: space-between
+.list__el
+	width: 24%
+	bsh()
+	tr(all)
+	overflow: hidden
+	&:last-child
+		box-shadow 0 0 0!important
+	&:hover
+		box-shadow 0px 10px 10px #c5c2c2
+
+.list__el-img
+	bg-full()
+	padding: 50% 10%
+.list__el-title
+	font-size: 24px
+	margin-bottom: 20px
+.list__el-text
+	margin-bottom: 20px
+	color #676767
+//.list__el-date
+
+.sale-item
+	width: 100%
+	background: #e3e6eb
+	height: 230px
+	margin-bottom: 20px
+
+.sale-item-long
+	background: #e3e6eb
+	height: 420px
+
+.list__el-content
+	padding: 20px 20px 30px 20px
+	background: white
+	border-radius 0 0 10px 10px

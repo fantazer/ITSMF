@@ -1,0 +1,37 @@
+mixin header()
+	//block header
+	.header
+		.main-cont
+			.header-cont
+				a(href="/").header__logo
+					img(src="img/logo-white.png", alt="")
+				.header__nav
+					.header__top
+						.header__enter
+							.header__enter-el Вход
+							.header__enter-devider
+							.header__enter-el Регистрация
+						.header__search
+							form(action="")
+								.header__search-wrap
+									input(type="text" placeholder="поиск").input
+									.header__search-icon
+										+icon("magnifying-glass","icon")
+					.header__menu
+						-
+							var items = [
+								'О ассоциации',
+								'Новости',
+								'События',
+								'Библиотека',
+								'книжный магазин',
+								'для участников',
+								'Блоги'
+								];
+						each item in items
+							.header__menu-el
+								a(href="#").header__menu-link #{item}
+								.header__menu-sub
+									- for (var i=0;i<6;i++)
+										a(href="#").header__menu-sub-el книжный магазин
+	//block header end

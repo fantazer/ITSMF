@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang='en'>
+	<!--create by ANATOLY KUZNETSOV-->
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="format-detection" content="telephone=no" />
+		<!--colors-tabs-->
+		<meta name="theme-color" content="#000" />
+		<meta name="msapplication-navbutton-color" content="#000" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="#000" />
+		<!--icons
+	link(rel="shortcut icon" href="img/fav/favicon.ico")
+	link(rel="apple-touch-icon" sizes="57x57" href="img/fav/apple-touch-icon-57x57.png")
+	link(rel="apple-touch-icon" sizes="60x60" href="img/fav/apple-touch-icon-60x60.png")
+	link(rel="apple-touch-icon" sizes="72x72" href="img/fav/apple-touch-icon-72x72.png")
+	link(rel="apple-touch-icon" sizes="76x76" href="img/fav/apple-touch-icon-76x76.png")
+	link(rel="apple-touch-icon" sizes="114x114" href="img/fav/apple-touch-icon-114x114.png")
+	link(rel="apple-touch-icon" sizes="120x120" href="img/fav/apple-touch-icon-120x120.png")
+	link(rel="apple-touch-icon" sizes="144x144" href="img/fav/apple-touch-icon-144x144.png")
+	link(rel="apple-touch-icon" sizes="152x152" href="img/fav/apple-touch-icon-152x152.png")
+	link(rel="apple-touch-icon" sizes="180x180" href="img/fav/apple-touch-icon-180x180.png")
+	meta(name="apple-mobile-web-app-capable" content="yes")
+	meta(name="apple-mobile-web-app-status-bar-style" content="black-translucent")
+	meta(name="apple-mobile-web-app-title" content="My App")
+	link(rel="yandex-tableau-widget" href="img/fav/yandex-browser-manifest.json")
+	link(rel="icon" type="image/png" sizes="228x228" href="img/fav/coast-228x228.png")
+	link(rel="icon" type="image/png" sizes="32x32" href="img/fav/favicon-32x32.png")
+	link(rel="icon" type="image/png" sizes="16x16" href="img/fav/favicon-16x16.png")
+	link(rel="manifest" href="img/fav/manifest.json")
+	meta(name="mobile-web-app-capable" content="yes")
+	meta(name="theme-color" content="#020307")
+	meta(name="application-name" content="My App")
+	meta(name="msapplication-TileColor" content="#020307")
+	meta(name="msapplication-TileImage" content="img/fav/mstile-144x144.png")
+	meta(name="msapplication-config" content="img/fav/browserconfig.xml")
+	
+	-->
+		<!--SEO-->
+		<title>Document</title>
+		<meta name="description" itemprop="description" content="" />
+		<link rel="stylesheet" href="css/vendor.css">
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/style-edit.css" />
+		<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;amp;subset=cyrillic" rel="stylesheet" />
+	</head>
+	<!-- mixin nameMixin()-->
+	<!-- - var args = Array.prototype.slice.call(arguments)-->
+	<!-- - for item in args-->
+
+	<body>
+		<!--block header-->
+		<div class="header">
+			<div class="main-cont">
+				<div class="header-cont">
+					<a class="header__logo" href="/">
+						<img src="img/logo-white.png" alt="" />
+					</a>
+					<div class="header__nav">
+						<div class="header__top">
+							<div class="header__enter">
+								<div class="header__enter-el">Вход</div>
+								<div class="header__enter-devider"></div>
+								<div class="header__enter-el">Регистрация</div>
+							</div>
+							<div class="header__search">
+								<form action="">
+									<div class="header__search-wrap">
+										<input class="input" type="text" placeholder="поиск" />
+										<div class="header__search-icon">
+											<svg class="icon">
+												<use xlink:href="#magnifying-glass"></use>
+											</svg>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+						<div class="header__menu">
+							<div class="header__menu-el">
+								<a class="header__menu-link" href="#">О ассоциации</a>
+								<div class="header__menu-sub">
+									<a class="header__menu-sub-el" href="#">книжный магазин</a>
+									<a class="header__menu-sub-el" href="#">книжный магазин</a>
+									<a class="header__menu-sub-el" href="#">книжный магазин</a>
+									<a class="header__menu-sub-el" href="#">книжный магазин</a>
+									<a class="header__menu-sub-el" href="#">книжный магазин</a>
+									<a class="header__menu-sub-el" href="#">книжный магазин</a>
+								</div>
+							</div>
+							<div class="header__menu-el">
+								<a class="header__menu-link" href="#">Новости</a>
+								<div class="header__menu-sub">
+									<a class="header__menu-sub-el" href="#">книжный магазин</a>
+									<a class="header__menu-sub-el" href="#">книжный магазин</a>
+									<a class="header__menu-sub-el" href="#">книжный магазин</a>
+									<a class="header__menu-sub-el" href="#">книжный магазин</a>
+									<a class="header__menu-sub-el" href="#">книжный магазин</a>
+									<a class="header__menu-sub-el" href="#">книжный магазин</a>
+								</div>
+							</div>
+							<div class="header__menu-el">
+								<a class="header__menu-link" href="#">События</a>
+								<div class="header__menu-sub">
+									<a class="header__menu-sub-el" href="#">книжный магазин</a>
+									<a class="header__menu-sub-el" href="#">книжный магазин</a>
+									<a class="header__menu-sub-el" href="#">книжный магазин</a>
+									<a class="header__menu-sub-el" href="#">книжный магазин</a>
+									<a class="header__menu-sub-el" href="#">книжный магазин</a>
+									<a class="header__menu-sub-el" href="#">книжный магазин</a>
+								</div>
+							</div>
+							<div class="header__menu-el">
+								<a class="header__menu-link" href="#">Библиотека</a>
+								<div class="header__menu-sub">
+									<a class="header__menu-sub-el" href="#">книжный магазин</a>
+									<a class="header__menu-sub-el" href="#">книжный магазин</a>
+									<a class="header__menu-sub-el" href="#">книжный магазин</a>
+									<a class="header__menu-sub-el" href="#">книжный магазин</a>
+									<a class="header__menu-sub-el" href="#">книжный магазин</a>
+									<a class="header__menu-sub-el" href="#">книжный магазин</a>
+								</div>
+							</div>
+							<div class="header__menu-el">
+								<a class="header__menu-link" href="#">книжный магазин</a>
+								<div class="header__menu-sub">
+									<a class="header__menu-sub-el" href="#">книжный магазин</a>
+									<a class="header__menu-sub-el" href="#">книжный магазин</a>
+									<a class="header__menu-sub-el" href="#">книжный магазин</a>
+									<a class="header__menu-sub-el" href="#">книжный магазин</a>
+									<a class="header__menu-sub-el" href="#">книжный магазин</a>
+									<a class="header__menu-sub-el" href="#">книжный магазин</a>
+								</div>
+							</div>
+							<div class="header__menu-el">
+								<a class="header__menu-link" href="#">для участников</a>
+								<div class="header__menu-sub">
+									<a class="header__menu-sub-el" href="#">книжный магазин</a>
+									<a class="header__menu-sub-el" href="#">книжный магазин</a>
+									<a class="header__menu-sub-el" href="#">книжный магазин</a>
+									<a class="header__menu-sub-el" href="#">книжный магазин</a>
+									<a class="header__menu-sub-el" href="#">книжный магазин</a>
+									<a class="header__menu-sub-el" href="#">книжный магазин</a>
+								</div>
+							</div>
+							<div class="header__menu-el">
+								<a class="header__menu-link" href="#">Блоги</a>
+								<div class="header__menu-sub">
+									<a class="header__menu-sub-el" href="#">книжный магазин</a>
+									<a class="header__menu-sub-el" href="#">книжный магазин</a>
+									<a class="header__menu-sub-el" href="#">книжный магазин</a>
+									<a class="header__menu-sub-el" href="#">книжный магазин</a>
+									<a class="header__menu-sub-el" href="#">книжный магазин</a>
+									<a class="header__menu-sub-el" href="#">книжный магазин</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--block header end-->
+		<div class="slider-wrap">
+			<div class="slider-filter"></div>
+			<div class="slider">
+				<div class="slider-el" style="background-image:url('img/slider-3.jpg')">
+					<div class="slider-content">
+						<div class="main-cont">
+							<div class="slider-cont">
+								<div class="slider-sub-title">VIII всероссийская конференция</div>
+								<div class="slider-title">Digital ITSM</div>
+								<div class="slider-text">27 сентября 2017 Рэдиссон Славянская</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="members">
+			<div class="main-cont">
+				<div class="members-wrap">
+					<div class="members-list">
+						<div class="members-list__el">
+							<img src="img/sponsor-1.png" alt="" />
+						</div>
+						<div class="members-list__el">
+							<img src="img/sponsor-2.png" alt="" />
+						</div>
+						<div class="members-list__el">
+							<img src="img/sponsor-3.png" alt="" />
+						</div>
+						<div class="members-list__el">
+							<img src="img/sponsor-4.png" alt="" />
+						</div>
+						<div class="members-list__el">
+							<img src="img/sponsor-5.png" alt="" />
+						</div>
+						<div class="members-list__el">
+							<img src="img/sponsor-6.png" alt="" />
+						</div>
+						<div class="members-list__el">
+							<img src="img/sponsor-7.png" alt="" />
+						</div>
+					</div>
+					<a class="members-get" href="#">Члены Форума</a>
+				</div>
+			</div>
+		</div>
+		<div class="section section--dark">
+			<div class="main-cont">
+				<div class="section-title">Интересное</div>
+				<div class="list">
+					<a class="list__el" href="#">
+						<div class="list__el-img" style="background-image:url('img/item-3.jpg')"></div>
+						<div class="list__el-content">
+							<div class="list__el-title">Эксперты рекомендуют!</div>
+							<div class="list__el-text">Повторять функционал коробочных систем, например Service Desk, в BPMS можно при большом запасе нервов, времени и денег. Почему мы рекомендуем этого не делать — в этой статье ...</div>
+							<div class="list__el-date">17.08.2017</div>
+						</div>
+					</a>
+					<a class="list__el" href="#">
+						<div class="list__el-img" style="background-image:url('img/item-4.jpg')"></div>
+						<div class="list__el-content">
+							<div class="list__el-title">Эксперты рекомендуют!</div>
+							<div class="list__el-text">Повторять функционал коробочных систем, например Service Desk, в BPMS можно при большом запасе нервов, времени и денег. Почему мы рекомендуем этого не делать — в этой статье ...</div>
+							<div class="list__el-date">17.08.2017</div>
+						</div>
+					</a>
+					<a class="list__el" href="#">
+						<div class="list__el-img" style="background-image:url('img/item-5.jpg')"></div>
+						<div class="list__el-content">
+							<div class="list__el-title">Эксперты рекомендуют!</div>
+							<div class="list__el-text">Повторять функционал коробочных систем, например Service Desk, в BPMS можно при большом запасе нервов, времени и денег. Почему мы рекомендуем этого не делать — в этой статье ...</div>
+							<div class="list__el-date">17.08.2017</div>
+						</div>
+					</a>
+					<div class="list__el list__el--sale">
+						<div class="sale-item"></div>
+						<div class="sale-item"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section">
+			<div class="main-cont">
+				<div class="section-title">Новости ITSM</div>
+				<div class="list">
+					<a class="list__el" href="#">
+						<div class="list__el-img" style="background-image:url('img/item-6.jpg')"></div>
+						<div class="list__el-content">
+							<div class="list__el-title">itSMF России: актуальные проекты</div>
+							<div class="list__el-text">Приглашаем сообщество к участию в мероприятиях форума.BPMS можно при большом запасе нервов, времени и денег. Почему мы рекомендуем этого не делать — в этой статье ...</div>
+							<div class="list__el-date">17.08.2017</div>
+						</div>
+					</a>
+					<a class="list__el" href="#">
+						<div class="list__el-img" style="background-image:url('img/item-7.jpg')"></div>
+						<div class="list__el-content">
+							<div class="list__el-title">itSMF России: актуальные проекты</div>
+							<div class="list__el-text">Приглашаем сообщество к участию в мероприятиях форума.BPMS можно при большом запасе нервов, времени и денег. Почему мы рекомендуем этого не делать — в этой статье ...</div>
+							<div class="list__el-date">17.08.2017</div>
+						</div>
+					</a>
+					<a class="list__el" href="#">
+						<div class="list__el-img" style="background-image:url('img/item-8.jpg')"></div>
+						<div class="list__el-content">
+							<div class="list__el-title">itSMF России: актуальные проекты</div>
+							<div class="list__el-text">Приглашаем сообщество к участию в мероприятиях форума.BPMS можно при большом запасе нервов, времени и денег. Почему мы рекомендуем этого не делать — в этой статье ...</div>
+							<div class="list__el-date">17.08.2017</div>
+						</div>
+					</a>
+					<div class="list__el list__el--sale">
+						<div class="sale-item-long"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section section--dark">
+			<div class="main-cont">
+				<div class="section-title">Отраслевые новости</div>
+				<div class="list">
+					<a class="list__el" href="#">
+						<div class="list__el-img" style="background-image:url('img/item-3.jpg')"></div>
+						<div class="list__el-content">
+							<div class="list__el-title">Новости VIII Всероссийской конференции itSMF</div>
+							<div class="list__el-text">Повторять функционал коробочных систем, например Service Desk, в BPMS можно при большом запасе нервов, времени и денег. Почему мы рекомендуем этого не делать — в этой статье ...</div>
+							<div class="list__el-date">17.08.2017</div>
+						</div>
+					</a>
+					<a class="list__el" href="#">
+						<div class="list__el-img" style="background-image:url('img/item-4.jpg')"></div>
+						<div class="list__el-content">
+							<div class="list__el-title">Новости VIII Всероссийской конференции itSMF</div>
+							<div class="list__el-text">Повторять функционал коробочных систем, например Service Desk, в BPMS можно при большом запасе нервов, времени и денег. Почему мы рекомендуем этого не делать — в этой статье ...</div>
+							<div class="list__el-date">17.08.2017</div>
+						</div>
+					</a>
+					<a class="list__el" href="#">
+						<div class="list__el-img" style="background-image:url('img/item-5.jpg')"></div>
+						<div class="list__el-content">
+							<div class="list__el-title">Новости VIII Всероссийской конференции itSMF</div>
+							<div class="list__el-text">Повторять функционал коробочных систем, например Service Desk, в BPMS можно при большом запасе нервов, времени и денег. Почему мы рекомендуем этого не делать — в этой статье ...</div>
+							<div class="list__el-date">17.08.2017</div>
+						</div>
+					</a>
+					<a class="list__el" href="#">
+						<div class="list__el-img" style="background-image:url('img/item-6.jpg')"></div>
+						<div class="list__el-content">
+							<div class="list__el-title">Новости VIII Всероссийской конференции itSMF</div>
+							<div class="list__el-text">Повторять функционал коробочных систем, например Service Desk, в BPMS можно при большом запасе нервов, времени и денег. Почему мы рекомендуем этого не делать — в этой статье ...</div>
+							<div class="list__el-date">17.08.2017</div>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+		<script src="js/combined.js"></script>
+		<script src="js/script.js"></script>
+		<script src="js/script-edit.js"></script>
+	</body>
+
+</html>
