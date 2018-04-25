@@ -1,3 +1,46 @@
 mixin footer()
 	//block footer
+	.footer
+		.main-cont
+			.footer-cont
+				.footer-info
+					.footer-soc
+						a(href="#").footer-soc__el
+							+icon("soc-facebook","icon")
+						a(href="#").footer-soc__el
+							+icon("soc-in","icon")
+						a(href="#").footer-soc__el
+							+icon("soc-vk","icon")
+						a(href="#").footer-soc__el
+							+icon("soc-twitter","icon")
+						a(href="#").footer-soc__el
+							+icon("soc-youtube","icon")
+					.footer-info__content
+						.footer-logo
+							img(src="img/logo-dark.png", alt="")
+						.footer-contact
+							.footer-contact__title Контакты:
+							.footer-contact__text Москва,ул. Складочная,д.3, стр.1, сектор С-D www.itsmforum.ru info@.itsmforum.ru +7(903) 771-81-48
+				.footer-nav
+					-
+						var els = [
+							'Новости',
+							'О АССОЦИАЦИИ',
+							'Библиотека',
+							'События',
+							'Книжный магазин',
+							'Участникам'
+							];
+					each el in els
+						.footer-nav__col
+							.footer-nav__title #{el}
+							-
+								var items = [
+									'Новости форума',
+									'Интересное',
+									'Отраслевые новости',
+									'Новости itSMF international'
+									];
+							each item in items
+								a(href="#").footer-nav__el #{item}
 	//block footer end

@@ -33,7 +33,7 @@ $border-color = #dddddd
 //Add fotn rub write .rub a - (a,b,c,d - change type font)
 
 //webfont('PT Sans', 'PT Sans', 'normal')
-$v-font =  'Din', sans-serif
+$v-font =  'Roboto', sans-serif
 
 typeSize(fontSm,font)
 	+below(768px)
@@ -129,6 +129,7 @@ btnStyleLight(br-btn,color-btn)
 	border 0px
 	color blue
 	text-align: center
+	font-family: Roboto
 	&:hover
 		cursor pointer
 
@@ -157,19 +158,27 @@ btnStyleLight(br-btn,color-btn)
 
 .btn--mark
 	@extend .btn
-	color white
+	color white!important
 	background $blue
 	.nav-icon
 		fill white
 	&:hover
-		background-color darken($blue,20)
+		background-color darken($blue,10)
 	&:active
-		background-color darken($blue,20)
+		background-color darken($blue,10)
 	input[type="submit"]
 		border 0
 	.nav-icon
 		fill white
 
+.btn--white
+	border 1px solid white
+	color white!important
+	@extend .btn
+	background:transparent
+	&:hover
+		background: white
+		color blue!important
 .btn--disable
 	@extend .disabled
 	border 1px solid $border-color

@@ -1,5 +1,75 @@
 $(document).ready(function(){
+	//tab modal
+	var tabConstruct = function (elHead,elTab){
+		$("."+elHead).click(function () {
+			var elHeadActive = elHead+'--active';
+			var elTabActive = elTab+'--active';
 
+			$("."+elHead).removeClass(elHeadActive);
+			$(this).addClass(elHeadActive);
+			var curentTab = $(this).data('tab');
+			$("."+elTab).each(function () {
+				$(this).removeClass(elTabActive);
+				if ($(this).data('tab') == curentTab) {
+					$(this).addClass(elTabActive);
+				}
+			})
+		});
+	};
+
+	tabConstruct('modal-title__el','modal-tab');
+	//modals
+	$('.modal-content').click(function(event){
+			event.stopPropagation();
+		});
+		var scrollPos = 0;
+		var openModal = function () {
+		if(!$('.modal-layer').hasClass('modal-layer-show')){
+			$('.modal-layer').addClass('modal-layer-show');
+		}
+		 scrollPos = $(window).scrollTop();
+			$('body').css({
+				overflow: 'hidden',
+				position: 'fixed',
+				top : -scrollPos,
+				width:'100%'
+			});
+			return scrollPos;
+		};
+
+		var closeModal = function () {
+			 $('.modal').removeClass('modal__show');
+			$('.modal-layer').removeClass('modal-layer-show');
+			$(".content").removeClass("modal-blur");
+			$('body').css({
+				overflow: '',
+				position: '',
+				top: ''
+			})
+			 $(window).scrollTop(scrollPos);
+		};
+
+		var initModal = function(el){
+			openModal();
+			$(".content").addClass("modal-blur");
+			$('.modal').each(function () {
+				if ($(this).data('modal')===el){
+					$(this).addClass('modal__show')
+				} else {
+					$(this).removeClass('modal__show')
+				}
+			});
+		};
+
+		$('.modal-get').click(function (){
+			var currentModal = $(this).data("modal");
+			initModal(currentModal);
+		});
+
+		$('.modal-layer , .modal-close').click(function (){
+			closeModal();
+		});
+	//modals===end
 
 	/* ###### For only ies  ######*/
 	//if(/MSIE \d|Trident.*rv:/.test(navigator.userAgent)){

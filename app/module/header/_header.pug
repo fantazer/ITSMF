@@ -7,10 +7,9 @@ mixin header()
 					img(src="img/logo-white.png", alt="")
 				.header__nav
 					.header__top
-						.header__enter
-							.header__enter-el Вход
-							.header__enter-devider
-							.header__enter-el Регистрация
+						.header-login.modal-get(data-modal="enter")
+								//для не залогиненного поменять иконку на #profile
+								+icon("enter","icon")
 						.header__search
 							form(action="")
 								.header__search-wrap
