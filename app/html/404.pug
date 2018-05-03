@@ -1,0 +1,45 @@
+include block_html/_style.pug
+include block_html/_include.pug
+.content.content--main
+	+header()
+	.cont
+		.main-cont
+			.content-wrap
+				.content-nav
+					.content-nav__wrap
+						a(href="#").content-nav-el.content-nav-el--active Актиный пункт
+						-
+							var items = [
+							'Устав партнёрства',
+							'Доска почёта',
+							'Состав партнёрства',
+							'Комитеты партнёрства',
+							'Контакты'
+							];
+						each item in items
+							a(href="#").content-nav-el #{item}
+
+					.content-nav__banner
+						- for (var i=1;i<3;i++)
+						.content-nav__banner-el.simle-banner Банер #{i}
+				.content-info
+					.main-title Страница не найдена
+					img(src="img/404.png", alt="").error-404
+
+		.all-conf(style="background-image:url('img/item-7.jpg')")
+			.filter.filter--red
+			.all-conf__content
+				.all-conf__title Все конференции itSMF России
+				a(href="#").all-conf__get www.itsmfcon.ru
+		.members
+			.main-cont
+				.members-wrap
+					.members-list
+						- for (var i=1;i<8;i++)
+							.members-list__el
+								img(src="img/sponsor-" + i + ".png", alt="")
+					a(href="#").members-get Члены Форума
+
+	+footer()
++modals()
+include ./block_html/_script.pug

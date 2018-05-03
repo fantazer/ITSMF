@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang='en'>
+	<!--create by ANATOLY KUZNETSOV-->
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="format-detection" content="telephone=no" />
+		<!--colors-tabs-->
+		<meta name="theme-color" content="#000" />
+		<meta name="msapplication-navbutton-color" content="#000" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="#000" />
+		<!--icons
+	link(rel="shortcut icon" href="img/fav/favicon.ico")
+	link(rel="apple-touch-icon" sizes="57x57" href="img/fav/apple-touch-icon-57x57.png")
+	link(rel="apple-touch-icon" sizes="60x60" href="img/fav/apple-touch-icon-60x60.png")
+	link(rel="apple-touch-icon" sizes="72x72" href="img/fav/apple-touch-icon-72x72.png")
+	link(rel="apple-touch-icon" sizes="76x76" href="img/fav/apple-touch-icon-76x76.png")
+	link(rel="apple-touch-icon" sizes="114x114" href="img/fav/apple-touch-icon-114x114.png")
+	link(rel="apple-touch-icon" sizes="120x120" href="img/fav/apple-touch-icon-120x120.png")
+	link(rel="apple-touch-icon" sizes="144x144" href="img/fav/apple-touch-icon-144x144.png")
+	link(rel="apple-touch-icon" sizes="152x152" href="img/fav/apple-touch-icon-152x152.png")
+	link(rel="apple-touch-icon" sizes="180x180" href="img/fav/apple-touch-icon-180x180.png")
+	meta(name="apple-mobile-web-app-capable" content="yes")
+	meta(name="apple-mobile-web-app-status-bar-style" content="black-translucent")
+	meta(name="apple-mobile-web-app-title" content="My App")
+	link(rel="yandex-tableau-widget" href="img/fav/yandex-browser-manifest.json")
+	link(rel="icon" type="image/png" sizes="228x228" href="img/fav/coast-228x228.png")
+	link(rel="icon" type="image/png" sizes="32x32" href="img/fav/favicon-32x32.png")
+	link(rel="icon" type="image/png" sizes="16x16" href="img/fav/favicon-16x16.png")
+	link(rel="manifest" href="img/fav/manifest.json")
+	meta(name="mobile-web-app-capable" content="yes")
+	meta(name="theme-color" content="#020307")
+	meta(name="application-name" content="My App")
+	meta(name="msapplication-TileColor" content="#020307")
+	meta(name="msapplication-TileImage" content="img/fav/mstile-144x144.png")
+	meta(name="msapplication-config" content="img/fav/browserconfig.xml")
+	
+	-->
+		<!--SEO-->
+		<title>Document</title>
+		<meta name="description" itemprop="description" content="" />
+		<link rel="stylesheet" href="css/vendor.css">
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/style-edit.css" />
+		<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;amp;subset=cyrillic" rel="stylesheet" />
+	</head>
+	<!-- mixin nameMixin()-->
+	<!-- - var args = Array.prototype.slice.call(arguments)-->
+	<!-- - for item in args-->
+
+	<body>
+		<div class="content content--main">
+			<!--block header-->
+			<div class="header">
+				<div class="main-cont">
+					<div class="header-cont">
+						<a class="header__logo" href="/">
+							<img src="img/logo-white.png" alt="" />
+						</a>
+						<div class="header__nav">
+							<div class="header__top">
+								<div class="header-login modal-get" data-modal="enter">
+									<!--для не залогиненного поменять иконку на #profile-->
+									<svg class="icon">
+										<use xlink:href="#enter"></use>
+									</svg>
+								</div>
+								<div class="header__search">
+									<form action="">
+										<div class="header__search-wrap">
+											<input class="input" type="text" placeholder="поиск" />
+											<div class="header__search-icon">
+												<svg class="icon">
+													<use xlink:href="#magnifying-glass"></use>
+												</svg>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+							<div class="header__menu">
+								<div class="header__menu-el">
+									<a class="header__menu-link" href="#">О ассоциации</a>
+									<div class="header__menu-sub">
+										<a class="header__menu-sub-el" href="#">книжный магазин</a>
+										<a class="header__menu-sub-el" href="#">книжный магазин</a>
+										<a class="header__menu-sub-el" href="#">книжный магазин</a>
+										<a class="header__menu-sub-el" href="#">книжный магазин</a>
+										<a class="header__menu-sub-el" href="#">книжный магазин</a>
+										<a class="header__menu-sub-el" href="#">книжный магазин</a>
+									</div>
+								</div>
+								<div class="header__menu-el">
+									<a class="header__menu-link" href="#">Новости</a>
+									<div class="header__menu-sub">
+										<a class="header__menu-sub-el" href="#">книжный магазин</a>
+										<a class="header__menu-sub-el" href="#">книжный магазин</a>
+										<a class="header__menu-sub-el" href="#">книжный магазин</a>
+										<a class="header__menu-sub-el" href="#">книжный магазин</a>
+										<a class="header__menu-sub-el" href="#">книжный магазин</a>
+										<a class="header__menu-sub-el" href="#">книжный магазин</a>
+									</div>
+								</div>
+								<div class="header__menu-el">
+									<a class="header__menu-link" href="#">События</a>
+									<div class="header__menu-sub">
+										<a class="header__menu-sub-el" href="#">книжный магазин</a>
+										<a class="header__menu-sub-el" href="#">книжный магазин</a>
+										<a class="header__menu-sub-el" href="#">книжный магазин</a>
+										<a class="header__menu-sub-el" href="#">книжный магазин</a>
+										<a class="header__menu-sub-el" href="#">книжный магазин</a>
+										<a class="header__menu-sub-el" href="#">книжный магазин</a>
+									</div>
+								</div>
+								<div class="header__menu-el">
+									<a class="header__menu-link" href="#">Библиотека</a>
+									<div class="header__menu-sub">
+										<a class="header__menu-sub-el" href="#">книжный магазин</a>
+										<a class="header__menu-sub-el" href="#">книжный магазин</a>
+										<a class="header__menu-sub-el" href="#">книжный магазин</a>
+										<a class="header__menu-sub-el" href="#">книжный магазин</a>
+										<a class="header__menu-sub-el" href="#">книжный магазин</a>
+										<a class="header__menu-sub-el" href="#">книжный магазин</a>
+									</div>
+								</div>
+								<div class="header__menu-el">
+									<a class="header__menu-link" href="#">книжный магазин</a>
+									<div class="header__menu-sub">
+										<a class="header__menu-sub-el" href="#">книжный магазин</a>
+										<a class="header__menu-sub-el" href="#">книжный магазин</a>
+										<a class="header__menu-sub-el" href="#">книжный магазин</a>
+										<a class="header__menu-sub-el" href="#">книжный магазин</a>
+										<a class="header__menu-sub-el" href="#">книжный магазин</a>
+										<a class="header__menu-sub-el" href="#">книжный магазин</a>
+									</div>
+								</div>
+								<div class="header__menu-el">
+									<a class="header__menu-link" href="#">для участников</a>
+									<div class="header__menu-sub">
+										<a class="header__menu-sub-el" href="#">книжный магазин</a>
+										<a class="header__menu-sub-el" href="#">книжный магазин</a>
+										<a class="header__menu-sub-el" href="#">книжный магазин</a>
+										<a class="header__menu-sub-el" href="#">книжный магазин</a>
+										<a class="header__menu-sub-el" href="#">книжный магазин</a>
+										<a class="header__menu-sub-el" href="#">книжный магазин</a>
+									</div>
+								</div>
+								<div class="header__menu-el">
+									<a class="header__menu-link" href="#">Блоги</a>
+									<div class="header__menu-sub">
+										<a class="header__menu-sub-el" href="#">книжный магазин</a>
+										<a class="header__menu-sub-el" href="#">книжный магазин</a>
+										<a class="header__menu-sub-el" href="#">книжный магазин</a>
+										<a class="header__menu-sub-el" href="#">книжный магазин</a>
+										<a class="header__menu-sub-el" href="#">книжный магазин</a>
+										<a class="header__menu-sub-el" href="#">книжный магазин</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--block header end-->
+			<div class="cont">
+				<div class="main-cont">
+					<div class="content-wrap">
+						<div class="content-nav">
+							<div class="content-nav__wrap">
+								<a class="content-nav-el content-nav-el--active" href="#">Актиный пункт</a>
+								<a class="content-nav-el" href="#">Устав партнёрства</a>
+								<a class="content-nav-el" href="#">Доска почёта</a>
+								<a class="content-nav-el" href="#">Состав партнёрства</a>
+								<a class="content-nav-el" href="#">Комитеты партнёрства</a>
+								<a class="content-nav-el" href="#">Контакты</a>
+							</div>
+							<div class="content-nav__banner">
+								<div class="content-nav__banner-el simle-banner">Банер 3</div>
+							</div>
+						</div>
+						<div class="content-info">
+							<div class="main-title">Страница не найдена</div>
+							<img class="error-404" src="img/404.png" alt="" />
+						</div>
+					</div>
+				</div>
+				<div class="all-conf" style="background-image:url('img/item-7.jpg')">
+					<div class="filter filter--red"></div>
+					<div class="all-conf__content">
+						<div class="all-conf__title">Все конференции itSMF России</div>
+						<a class="all-conf__get" href="#">www.itsmfcon.ru</a>
+					</div>
+				</div>
+				<div class="members">
+					<div class="main-cont">
+						<div class="members-wrap">
+							<div class="members-list">
+								<div class="members-list__el">
+									<img src="img/sponsor-1.png" alt="" />
+								</div>
+								<div class="members-list__el">
+									<img src="img/sponsor-2.png" alt="" />
+								</div>
+								<div class="members-list__el">
+									<img src="img/sponsor-3.png" alt="" />
+								</div>
+								<div class="members-list__el">
+									<img src="img/sponsor-4.png" alt="" />
+								</div>
+								<div class="members-list__el">
+									<img src="img/sponsor-5.png" alt="" />
+								</div>
+								<div class="members-list__el">
+									<img src="img/sponsor-6.png" alt="" />
+								</div>
+								<div class="members-list__el">
+									<img src="img/sponsor-7.png" alt="" />
+								</div>
+							</div>
+							<a class="members-get" href="#">Члены Форума</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--block footer-->
+			<div class="footer">
+				<div class="main-cont">
+					<div class="footer-cont">
+						<div class="footer-info">
+							<div class="footer-soc">
+								<a class="footer-soc__el" href="#">
+									<svg class="icon">
+										<use xlink:href="#soc-facebook"></use>
+									</svg>
+								</a>
+								<a class="footer-soc__el" href="#">
+									<svg class="icon">
+										<use xlink:href="#soc-in"></use>
+									</svg>
+								</a>
+								<a class="footer-soc__el" href="#">
+									<svg class="icon">
+										<use xlink:href="#soc-vk"></use>
+									</svg>
+								</a>
+								<a class="footer-soc__el" href="#">
+									<svg class="icon">
+										<use xlink:href="#soc-twitter"></use>
+									</svg>
+								</a>
+								<a class="footer-soc__el" href="#">
+									<svg class="icon">
+										<use xlink:href="#soc-youtube"></use>
+									</svg>
+								</a>
+							</div>
+							<div class="footer-info__content">
+								<div class="footer-logo">
+									<img src="img/logo-dark.png" alt="" />
+								</div>
+								<div class="footer-contact">
+									<div class="footer-contact__title">Контакты:</div>
+									<div class="footer-contact__text">Москва,ул. Складочная,д.3, стр.1, сектор С-D www.itsmforum.ru info@.itsmforum.ru +7(903) 771-81-48</div>
+								</div>
+							</div>
+						</div>
+						<div class="footer-nav">
+							<div class="footer-nav__col">
+								<div class="footer-nav__title">Новости</div>
+								<a class="footer-nav__el" href="#">Новости форума</a>
+								<a class="footer-nav__el" href="#">Интересное</a>
+								<a class="footer-nav__el" href="#">Отраслевые новости</a>
+								<a class="footer-nav__el" href="#">Новости itSMF international</a>
+							</div>
+							<div class="footer-nav__col">
+								<div class="footer-nav__title">О АССОЦИАЦИИ</div>
+								<a class="footer-nav__el" href="#">Новости форума</a>
+								<a class="footer-nav__el" href="#">Интересное</a>
+								<a class="footer-nav__el" href="#">Отраслевые новости</a>
+								<a class="footer-nav__el" href="#">Новости itSMF international</a>
+							</div>
+							<div class="footer-nav__col">
+								<div class="footer-nav__title">Библиотека</div>
+								<a class="footer-nav__el" href="#">Новости форума</a>
+								<a class="footer-nav__el" href="#">Интересное</a>
+								<a class="footer-nav__el" href="#">Отраслевые новости</a>
+								<a class="footer-nav__el" href="#">Новости itSMF international</a>
+							</div>
+							<div class="footer-nav__col">
+								<div class="footer-nav__title">События</div>
+								<a class="footer-nav__el" href="#">Новости форума</a>
+								<a class="footer-nav__el" href="#">Интересное</a>
+								<a class="footer-nav__el" href="#">Отраслевые новости</a>
+								<a class="footer-nav__el" href="#">Новости itSMF international</a>
+							</div>
+							<div class="footer-nav__col">
+								<div class="footer-nav__title">Книжный магазин</div>
+								<a class="footer-nav__el" href="#">Новости форума</a>
+								<a class="footer-nav__el" href="#">Интересное</a>
+								<a class="footer-nav__el" href="#">Отраслевые новости</a>
+								<a class="footer-nav__el" href="#">Новости itSMF international</a>
+							</div>
+							<div class="footer-nav__col">
+								<div class="footer-nav__title">Участникам</div>
+								<a class="footer-nav__el" href="#">Новости форума</a>
+								<a class="footer-nav__el" href="#">Интересное</a>
+								<a class="footer-nav__el" href="#">Отраслевые новости</a>
+								<a class="footer-nav__el" href="#">Новости itSMF international</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--block footer end-->
+		</div>
+		<!--block modals-->
+		<div class="modal-layer">
+			<div class="modal" data-modal="pass">
+				<div class="modal-content">
+					<div class="modal-close">
+						<svg class="icon">
+							<use xlink:href="#close"></use>
+						</svg>
+					</div>
+					<div class="modal-head">
+						<div class="wave-bg"></div>
+						<div class="modal-head-wave"></div>
+						<div class="modal-title">Восстановление пароля</div>
+					</div>
+					<div class="modal-info">
+						<form action="#">
+							<div class="input-row">
+								<div class="input-row-title">Ваш Email</div>
+								<input class="input" type="text" />
+							</div>
+							<div class="pass-text--mid">Мы отправим пароль на указанный вами email</div>
+							<div class="btn-row--mid">
+								<div class="btn--md btn--mark btn--modal">
+									<div class="btn--icon">
+										<span>Отправить</span>
+										<svg class="nav-icon">
+											<use xlink:href="#arrow-right"></use>
+										</svg>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="modal modal--auth" data-modal="enter">
+				<div class="modal-content">
+					<div class="modal-close">
+						<svg class="icon">
+							<use xlink:href="#close"></use>
+						</svg>
+					</div>
+					<div class="modal-head modal-head--tab">
+						<div class="wave-bg"></div>
+						<div class="modal-head-wave"></div>
+						<div class="modal-title__el modal-title__el--active" data-tab="enter">Вход</div>
+						<div class="modal-title__el" data-tab="reg">регистрация</div>
+					</div>
+					<div class="modal-info">
+						<div class="modal-tab modal-tab--active" data-tab="enter">
+							<form action="#">
+								<div class="input-row">
+									<div class="input-row-title">Ваш Email</div>
+									<input class="input" type="text" />
+								</div>
+								<div class="input-row">
+									<div class="input-row-title">Ваш Пароль</div>
+									<input class="input" type="password" />
+								</div>
+								<div class="pass-fogot modal-get" data-modal="pass">Забыли пароль?</div>
+								<div class="btn-row--mid">
+									<div class="btn--md btn--mark btn--modal">
+										<div class="btn--icon">
+											<span>войти</span>
+											<svg class="nav-icon">
+												<use xlink:href="#arrow-right"></use>
+											</svg>
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+						<div class="modal-tab" data-tab="reg">
+							<form action="#">
+								<div class="input-row">
+									<div class="input-row-title">Ваше имя</div>
+									<input class="input" type="text" />
+								</div>
+								<div class="input-row">
+									<div class="input-row-title">Ваш Email</div>
+									<input class="input" type="text" />
+								</div>
+								<div class="input-row-half">
+									<div class="input-row-half__el">
+										<div class="input-row-title">Пароль</div>
+										<input class="input" type="password" />
+									</div>
+									<div class="input-row-half__el">
+										<div class="input-row-title">Повторите пароль</div>
+										<input class="input" type="password" />
+									</div>
+								</div>
+								<div class="btn-row--mid">
+									<div class="btn--md btn--mark btn--modal">
+										<div class="btn--icon">
+											<span>зарегистрироваться</span>
+											<svg class="nav-icon">
+												<use xlink:href="#arrow-right"></use>
+											</svg>
+										</div>
+									</div>
+								</div>
+							</form>
+							<div class="personal-text">Нажимая кнопку “Зарегистрироваться” вы дайте согласие на обработку персональных данных</div>
+						</div>
+						<div class="modal-soc">
+							<div class="modal-soc-text">Или войдите через соц.сети</div>
+							<div class="modal-soc-row">
+								<div class="modal-soc-el modal-soc-el--inst">
+									<svg class="icon">
+										<use xlink:href="#soc-instagram"></use>
+									</svg>
+								</div>
+								<div class="modal-soc-el modal-soc-el--twitter">
+									<svg class="icon">
+										<use xlink:href="#soc-twitter"></use>
+									</svg>
+								</div>
+								<div class="modal-soc-el modal-soc-el--fb">
+									<svg class="icon">
+										<use xlink:href="#soc-facebook"></use>
+									</svg>
+								</div>
+								<div class="modal-soc-el modal-soc-el--vk">
+									<svg class="icon">
+										<use xlink:href="#soc-vk"></use>
+									</svg>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal" data-modal="callback">
+				<div class="modal-content">
+					<div class="modal-close">
+						<svg class="icon">
+							<use xlink:href="#close"></use>
+						</svg>
+					</div>
+					<div class="modal-head">
+						<div class="wave-bg"></div>
+						<div class="modal-head-wave"></div>
+						<div class="modal-title">Обратный звонок</div>
+					</div>
+					<div class="modal-info">
+						<form action="#">
+							<div class="input-row">
+								<div class="input-row-title">Ваш телефон</div>
+								<input class="input" type="text" />
+							</div>
+							<div class="pass-text--mid">Мы перезвоним в ближайшее время.</div>
+							<div class="btn-row--mid">
+								<div class="btn--md btn--mark btn--modal">
+									<div class="btn--icon">
+										<span>Отправить</span>
+										<svg class="nav-icon">
+											<use xlink:href="#arrow-right"></use>
+										</svg>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--block modals end-->
+		<script src="js/combined.js"></script>
+		<script src="js/script.js"></script>
+		<script src="js/script-edit.js"></script>
+	</body>
+
+</html>

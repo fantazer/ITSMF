@@ -1,0 +1,96 @@
+include block_html/_style.pug
+include block_html/_include.pug
+.content.content--main
+	+header()
+	.cont
+		.main-cont
+			.content-wrap
+				.content-nav
+					.content-nav__wrap
+						a(href="#").content-nav-el.content-nav-el--active Актиный пункт
+						-
+							var items = [
+								'Устав партнёрства',
+								'Доска почёта',
+								'Состав партнёрства',
+								'Комитеты партнёрства',
+								'Контакты'
+								];
+						each item in items
+							a(href="#").content-nav-el #{item}
+
+					.content-nav__banner
+						- for (var i=1;i<4;i++)
+							.content-nav__banner-el.simle-banner Банер #{i}
+
+				.content-info
+					.main-title Устав партнёрства
+					.article-date 17.08.2018
+					p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium animi architecto atque consectetur culpa, dolorem doloremque dolorum eligendi explicabo illum in incidunt magnam, minus neque numquam pariatur perferendis possimus provident quidem quis quo, quos temporibus vel veritatis voluptate? Ad, magni, veritatis. Corporis et iure laborum natus possimus. Accusamus alias aspernatur at corporis cumque cupiditate dolorem doloremque dolores ea excepturi, explicabo hic <a href="#"> impedit incidunt ipsa iusto</a> laudantium natus nemo omnis optio quas, quos ratione rem repellendus veritatis, voluptate voluptatem voluptates? Aliquam, consectetur, ducimus enim error fuga iure labore modi molestias nobis nostrum numquam optio quaerat quod sequi tempora ut voluptatem voluptates.
+					h1 Заголовок h1
+					p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum explicabo illum iure unde voluptate. Architecto asperiores autem consectetur corporis delectus distinctio dolor enim exercitationem explicabo facilis ipsum laudantium, magnam nemo possimus qui quia quos recusandae repellat sed similique sit suscipit.
+					h2 Заголовок h2
+					p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum explicabo illum iure unde voluptate. Architecto asperiores autem consectetur corporis delectus distinctio dolor enim exercitationem explicabo facilis ipsum laudantium, magnam nemo possimus qui quia quos recusandae repellat sed similique sit suscipit.
+					h3 Заголовок h3
+					p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum explicabo illum iure unde voluptate. Architecto asperiores autem consectetur corporis delectus distinctio dolor enim exercitationem explicabo facilis ipsum laudantium, magnam nemo possimus qui quia quos recusandae repellat sed similique sit suscipit.
+					h4 Заголовок h4
+					p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum explicabo illum iure unde voluptate. Architecto asperiores autem consectetur corporis delectus distinctio dolor enim exercitationem explicabo facilis ipsum laudantium, magnam nemo possimus qui quia quos recusandae repellat sed similique sit suscipit.
+					h5 Заголовок h5
+					p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum explicabo illum iure unde voluptate. Architecto asperiores autem consectetur corporis delectus distinctio dolor enim exercitationem explicabo facilis ipsum laudantium, magnam nemo possimus qui quia quos recusandae repellat sed similique sit suscipit.
+					ul
+						li Элемент списка
+						li Элемент списка
+						li Элемент списка
+						li Элемент списка
+						li Элемент списка
+
+					table.table
+						thead
+							tr
+								td новости
+								td погода
+								td информация
+								td события
+						tbody
+							tr
+								td possimus qui quia quos recusandae repellat sed
+								td ctetur corporis delectus
+								td etur adipisicing elit. Earum explicabo illum iure unde voluptate. Architecto asperiores autem consectetur corpori
+								td possimus qui quia quos recusandae repellat
+							tr
+								td possimus qui quia quos recusandae repellat sed
+								td ctetur corporis delectus
+								td etur adipisicing elit. Earum explicabo illum iure unde voluptate. Architecto asperiores autem consectetur corpori
+								td possimus qui quia quos recusandae repellat
+							tr
+								td possimus qui quia quos recusandae repellat sed
+								td ctetur corporis delectus
+								td etur adipisicing elit. Earum explicabo illum iure unde voluptate. Architecto asperiores autem consectetur corpori
+								td possimus qui quia quos recusandae repellat
+					p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, aliquid animi asperiores aspernatur at autem beatae debitis dolorem doloremque ducimus eum fugit ipsa ipsum minus nihil omnis optio quam qui quibusdam quisquam quos sequi similique, sit ut veniam voluptatem voluptates!
+					img(src="img/article.jpg", alt="" class="img-article--left")
+					p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium animi architecto atque consectetur culpa, dolorem doloremque dolorum eligendi explicabo illum in incidunt magnam, minus neque numquam pariatur perferendis possimus provident quidem quis quo, quos temporibus vel veritatis voluptate? Ad, magni, veritatis. Corporis et iure laborum natus possimus. Accusamus alias aspernatur at corporis cumque cupiditate dolorem doloremque dolores ea excepturi, explicabo hic <a href="#"> impedit incidunt ipsa iusto</a> laudantium natus nemo omnis optio quas, quos ratione rem repellendus veritatis, voluptate voluptatem voluptates? Aliquam, consectetur, ducimus enim error fuga iure labore modi molestias nobis nostrum numquam optio quaerat quod sequi tempora ut voluptatem voluptates.quidem quis quo, quos temporibus vel veritatis voluptate? Ad, magni, veritatis. Corporis et iure laborum natus possimus. Accusamus alias aspernatur at corporis cumque cupiditate dolorem doloremque dolores ea excepturi, explicabo hic <a href="#"> impedit incidunt ipsa iusto</a> laudantium natus nemo omnis optio quas, quos ratione rem repellendus veritatis, voluptate voluptatem voluptates? Aliquam, consectetur, ducimus enim error fuga iure labore modi molestias nobis nostrum numquam optio quaerat quod sequi tempora ut voluptatem voluptates.
+
+						img(src="img/article.jpg", alt="" class="img-article--right")
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium animi architecto atque consectetur culpa, dolorem doloremque dolorum eligendi explicabo illum in incidunt magnam, minus neque numquam pariatur perferendis possimus provident quidem quis quo, quos temporibus vel veritatis voluptate? Ad, magni, veritatis. Corporis et iure laborum natus possimus. Accusamus alias aspernatur  t. Accusantium animi architecto atque consectetur culpa, dolorem doloremque dolorum eligendi explicabo illum in incidunt magnam, minus neque numquam pariatur perferendis possimus provident quidem quis quo, quos temporibus vel veritatis voluptate? Ad, magni, veritatis. Corporis et iure laborum natus possimus. Accusamus alias asperna at corporis cumque cupiditate dolorem doloremque dolores ea excepturi, explicabo hicimpedit incidunt ipsa iusto laudantium natus nemo omnis optio quas, quos ratione rem repellendus veritatis, voluptate voluptatem voluptates? Aliquam, consectetur, ducimus enim error fuga iure labore modi molestias nobis nostrum numquam optio quaerat quod sequi tempora ut voluptatem voluptates.quidem quis quo, quos temporibus vel veritatis voluptate? Ad, magni, veritatis. Corporis et iure laborum natus possimus. Accusamus alias aspernatur at corporis cumque cupiditate dolorem doloremque dolores ea excepturi, explicabo hic <a href="#"> impedit incidunt ipsa iusto</a> laudantium natus nemo omnis optio quas, quos ratione rem repellendus veritatis, voluptate voluptatem voluptates? Aliquam, consectetur, ducimus enim error fuga iure labore modi molestias nobis nostrum numquam optio quaerat quod sequi tempora ut voluptatem voluptates.
+						img(src="img/article.jpg", alt="" class="img-article--center")
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium animi architecto atque consectetur culpa, dolorem doloremque dolorum eligendi explicabo illum in incidunt magnam, minus neque numquam pariatur perferendis possimus provident quidem quis quo, quos temporibus vel veritatis voluptate? Ad, magni, veritatis. Corporis et iure laborum natus possimus. Accusamus alias aspernatur  t. Accusantium animi architecto atque consectetur culpa, dolorem doloremque dolorum eligendi explicabo illum in incidunt magnam, minus neque numquam pariatur perferendis possimus provident quidem quis quo, quos temporibus vel veritatis voluptate? Ad, magni, veritatis. Corporis et i
+		.all-conf(style="background-image:url('img/item-7.jpg')")
+			.filter.filter--red
+			.all-conf__content
+				.all-conf__title Все конференции itSMF России
+				a(href="#").all-conf__get www.itsmfcon.ru
+		.members
+			.main-cont
+				.members-wrap
+					.members-list
+						- for (var i=1;i<8;i++)
+							.members-list__el
+								img(src="img/sponsor-" + i + ".png", alt="")
+					a(href="#").members-get Члены Форума
+
+
+
+	+footer()
++modals()
+include ./block_html/_script.pug

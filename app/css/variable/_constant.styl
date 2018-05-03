@@ -19,7 +19,7 @@ black = #111111
 
 $blue = #335495
 $red = #a51e49
-$text = #676767
+$text = #383838
 
 $main-text-color = black
 $link-color = black
@@ -53,10 +53,10 @@ typeSize(fontSm,font)
 	typeSize(18,15)
 
 .type--lg
-	typeSize(26,18)
+	typeSize(24,18)
 
 .type--xl
-	typeSize(36,20)
+	typeSize(28,20)
 
 .type--bold
 	font-weight bold
@@ -81,6 +81,17 @@ a
 
 p
 	@extend .type--main
+	line-height: 1.6
+	color $text
+	margin-bottom: 0
+
+li
+	color $text
+
+table
+	color $text
+thead
+	font-weight:bold
 
 .link--mark
 	color $blue

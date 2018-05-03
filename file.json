@@ -5,6 +5,10 @@
 		"modals":"modals"
 	},
 	"page":{
-		"index":"index"
+		"index":"index",
+		"item":"item",
+		"list":"list",
+		"search":"search",
+		"404":"404"
 	}
 }

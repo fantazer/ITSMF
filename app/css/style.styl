@@ -638,7 +638,7 @@ body
 	flex-direction: column
 
 .cont
-	background: #f2eff8
+	//background: #f2eff8
 	flex-grow:1
 
 .modal-blur
@@ -659,3 +659,94 @@ body
 
 .section--white
 	background: white
+
+.content-wrap
+	f()
+	justify-content: space-between
+
+.content-nav
+	background: #f6f4f5
+	width: 265px
+	padding-top: 40px
+
+.content-info
+	width: calc(100% - 300px)
+	padding: 40px 0
+	a
+		text-decoration: underline
+		color black
+.content-nav-el
+	display: block
+	padding: 20px
+	text-transform: uppercase
+	//font-family: Din
+	font-size: 14px
+	line-height: 1
+	font-weight: bold
+	border-top: 1px solid #e3e3e3
+	tr(all)
+	&:hover
+		background: $red
+		color white
+	&:last-child
+		border-bottom: 1px solid #e3e3e3!important
+
+.content-nav-el--active
+	background: $red
+	color white
+
+.main-title
+	@extend .section-title
+	font-size: 34px
+	font-family: Roboto
+	font-weight: 700
+
+.img-article--left
+	max-width 40%
+	float left
+	margin-right: 20px
+	margin-top: 20px
+.img-article--right
+	max-width 40%
+	float right
+	margin-left: 20px
+	margin-top: 20px
+
+.img-article--center
+	display: block
+	margin: 20px auto
+
+.content-nav__wrap
+	margin-bottom: 40px
+
+.content-nav__banner-el
+	margin-bottom: 20px
+
+.simle-banner
+	background: #d5d5d5
+	height: 300px
+	flex(mid)
+	color white
+	up()
+
+.list--triple
+	display: grid
+	grid-gap 20px
+	grid-template-columns repeat(3,1fr);
+	a
+		text-decoration: none !important
+	.list__el
+		width: 100%
+
+.search-el
+	margin-bottom: 20px
+	text-decoration: none !important
+	display: inline-block
+	border-bottom: 1px solid $border-color
+	padding-bottom: 20px
+.search-el__title
+	font-size: 20px
+	font-weight: 700
+	margin-bottom: 20px
+.search-el__text
+	line-height: 1.6
