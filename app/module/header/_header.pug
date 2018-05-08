@@ -16,7 +16,11 @@ mixin header()
 									input(type="text" placeholder="поиск").input
 									.header__search-icon
 										+icon("magnifying-glass","icon")
+						.header-toggle
+							+icon("menu","icon")
 					.header__menu
+						.header__menu-close
+							+icon("close","icon")
 						-
 							var items = [
 								'О ассоциации',

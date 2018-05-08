@@ -1,4 +1,8 @@
 $(document).ready(function(){
+
+
+
+
 	//tab modal
 	var tabConstruct = function (elHead,elTab){
 		$("."+elHead).click(function () {
@@ -70,6 +74,24 @@ $(document).ready(function(){
 			closeModal();
 		});
 	//modals===end
+
+		//mobile menu
+		$('.header-toggle').click(function(event){
+				event.stopPropagation();
+				$(".header__menu").toggleClass("header__menu--open");
+				openModal();
+		});
+		$(".header__menu").on("click", function (event) {
+			event.stopPropagation();
+		});
+		$(document).on("click", function () {
+				$(".header__menu").removeClass("header__menu--open");
+		});
+		$(".header__menu-close").on("click", function () {
+				$(".header__menu").removeClass("header__menu--open");
+				closeModal();
+		});
+	//mobile menu===end
 
 	/* ###### For only ies  ######*/
 	//if(/MSIE \d|Trident.*rv:/.test(navigator.userAgent)){
