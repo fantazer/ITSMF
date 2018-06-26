@@ -1,8 +1,5 @@
 $(document).ready(function(){
 
-
-
-
 	//tab modal
 	var tabConstruct = function (elHead,elTab){
 		$("."+elHead).click(function () {
