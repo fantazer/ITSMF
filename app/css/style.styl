@@ -857,20 +857,27 @@ body
 	up()
 
 .list--triple
-	+below(1024px)
-		grid-template-columns repeat(2,1fr);
+	//+below(1024px)
 	+below(640px)
-		grid-template-columns repeat(1,1fr);
 		max-width:400px
 		margin-left:auto
 		margin-right:auto
-	display: grid
-	grid-gap 20px
-	grid-template-columns repeat(3,1fr);
+		width: 100%
+	f()
+	fw()
+	justify-content: flex-start
+	margin-left: -10px
+	margin-right: -10px
+	width: calc(100% - 30px)
 	a
 		text-decoration: none !important
 	.list__el
-		width: 100%
+		+below(1024px)
+			width: calc(100%/2 - 20px)
+		+below(640px)
+			width: 100%
+		width: calc(100%/3 - 20px)
+		margin: 10px
 
 .search-el
 	margin-bottom: 20px

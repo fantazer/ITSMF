@@ -122,7 +122,7 @@ $(document).ready(function(){
 }
 
 	console.log(detectIE());
-	if (detectIE() <= 14 && detectIE()) {
+	if (detectIE() <= 10 && detectIE()) {
 		$('body').empty();
 		$('body').prepend('' +
 		 '<div class="old-browser">' +
@@ -132,7 +132,7 @@ $(document).ready(function(){
 	}
 
 	//for init SVG 
-	svg4everybody();
+	//svg4everybody();
 	// ==== clear storage =====
 	 localStorage.clear();
 	 sessionStorage.clear();
