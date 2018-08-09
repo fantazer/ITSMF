@@ -269,16 +269,19 @@ body
 	+below(978px)
 		fw()
 	f()
-	justify-content: space-between
+	//justify-content: space-between
+	margin-left: -10px
+	margin-right: -10px
 .list__el
 	+below(978px)
-		width: 49%
+		width: calc(49% - 15px)
 		margin-bottom: 20px
 	+below(640px)
 		width: 100%
 		&:last-child
 			margin-bottom: 0
-	width: 24%
+	width: calc(24% - 20px)
+	margin 0 10px
 	bsh()
 	tr(all)
 	overflow: hidden
@@ -475,10 +478,10 @@ body
 .footer-nav
 	+below(640px)
 		padding: 10px
+		display: none
 	font-family:Din
 	f()
 	fw()
-	justify-content: space-between
 	padding: 40px 0 40px 40px
 .footer-nav__col
 	+below(640px)
