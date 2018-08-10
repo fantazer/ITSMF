@@ -280,7 +280,7 @@ body
 		width: 100%
 		&:last-child
 			margin-bottom: 0
-	width: calc(24% - 20px)
+	width: calc(25% - 20px)
 	margin 0 10px
 	bsh()
 	tr(all)
@@ -288,7 +288,10 @@ body
 	&:hover
 		box-shadow 0px 10px 10px #c5c2c2
 .list__el--sale
-		box-shadow 0 0 0!important
+	+below(1024px)
+		margin 0 10px
+	box-shadow 0 0 0!important
+	margin-left: auto
 .list__el-img
 	+below(640px)
 		padding: 35% 10%
