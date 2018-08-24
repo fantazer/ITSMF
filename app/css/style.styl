@@ -125,13 +125,19 @@ body
 		&:after
 			content ''
 			display: none
+		.header__menu-sub
+			left: initial
+			right 0
+.header__menu-sub--right
+	left: initial
+	right 0
 .header__menu-link
 	+below(1024px)
 		padding: 10px
 	color white
 	display: block
 	width: 100%
-	height: 100%
+	//height: 100%
 	font-family:Din
 	&:hover
 		color white
@@ -145,10 +151,12 @@ body
 		transform translateX(0px)
 		background: #2c4880
 		text-align: center
+		top initial
+		width: 100%
 	position: absolute
 	background: #a51e49
 	min-width 100%
-	width: 220px
+	width: 310px
 	top 100%
 	left 0
 	transition opacity .6s, transform .6s
@@ -334,11 +342,13 @@ body
 	+below(768px)
 		flex-grow 1
 		min-width 300px
-		padding: 15%
+		padding: 20px
+		min-height 200px
 	+below(640px)
-		padding: 25%
+		padding: 20px
 	width: 25%
-	padding: 10%
+	padding: 20px
+	min-height 300px
 	position: relative
 	bg-full()
 	&:hover
@@ -346,7 +356,7 @@ body
 			background: rgba(165, 30, 73, 0.7)
 .event__el-content
 	padding: 20px
-	position: absolute
+	position: relative
 	width: 100%
 	height: 100%
 	top 0
@@ -376,7 +386,7 @@ body
 	text-align: center
 	color white
 	up()
-	width: 80%
+	//width: 80%
 	max-width 300px
 	font-family:Din
 
@@ -908,12 +918,13 @@ body
 
 .header__menu-close
 	display: none
-
+	z-index 1110
+	position: absolute
 .header__menu--open
 	.icon
 		size 20px
 		fill white
-		position: fixed
+		position: absolute
 		top 10px
 		left 10px
 		cp()
